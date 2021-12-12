@@ -84,12 +84,12 @@ namespace WebAppReact_Core.Controllers
             //added data
             //added another
             //added from main 
-
+            //sd
             //added data from subNiti
         }
 
         // DELETE: api/DCandidate/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}")]//
         public async Task<IActionResult> DeleteDCandidate(int id)
         {
             var dCandidate = await _context.DCandidates.FindAsync(id);
