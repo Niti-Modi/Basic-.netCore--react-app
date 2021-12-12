@@ -86,7 +86,7 @@ namespace WebAppReact_Core.Controllers
             //added from main 
             //added data to remote dev_Niti
             //added data from subNiti
-            //added another change
+            //added change from remote dev niti
         }
 
         // DELETE: api/DCandidate/5
