@@ -81,6 +81,7 @@ namespace WebAppReact_Core.Controllers
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetDCandidate", new { id = dCandidate.id }, dCandidate);
+            //added data
         }
 
         // DELETE: api/DCandidate/5
