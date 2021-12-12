@@ -81,7 +81,11 @@ namespace WebAppReact_Core.Controllers
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetDCandidate", new { id = dCandidate.id }, dCandidate);
+
+            //a
+
             //b
+
             //added data
             //added another
             //added from main 
@@ -89,6 +93,7 @@ namespace WebAppReact_Core.Controllers
             //added data from subNiti
             //added change from remote dev niti
             //added changes from remote dev_niti 
+            //added changes to local sub_niti
             //stash
         }
 
