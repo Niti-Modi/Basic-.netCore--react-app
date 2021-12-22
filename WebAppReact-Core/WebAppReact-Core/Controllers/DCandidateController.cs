@@ -15,8 +15,11 @@ namespace WebAppReact_Core.Controllers
     {
         private readonly DonationDBContext _context;
 
+       
+
         public DCandidateController(DonationDBContext context)
         {
+            
             _context = context;
         }
 
@@ -24,7 +27,8 @@ namespace WebAppReact_Core.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DCandidate>>> GetDCandidates()
         {
-            return await _context.DCandidates.ToListAsync();
+            var data = await _context.DCandidates.ToListAsync();
+            return data;
         }
 
         // GET: api/DCandidate/5
@@ -72,6 +76,8 @@ namespace WebAppReact_Core.Controllers
             return NoContent();
         }
 
+
+      
         // POST: api/DCandidate
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
@@ -83,7 +89,7 @@ namespace WebAppReact_Core.Controllers
             return CreatedAtAction("GetDCandidate", new { id = dCandidate.id }, dCandidate);
 
             //a
-
+            
             //b
 
             //added data
@@ -151,4 +157,5 @@ namespace WebAppReact_Core.Controllers
             return _context.DCandidates.Any(e => e.id == id);
         }
     }
+
 }
